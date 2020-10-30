@@ -1,0 +1,142 @@
+.sidebar{
+	width: 230px;
+	background: #181B25;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	overflow: auto;
+	.logo{
+		display: block;
+		padding-left: 28px;
+		padding-top: 28px;
+		padding: 28px 0 39px 28px;
+	}
+}
+.main_nav{
+	.nav-item{
+		margin-bottom: 10px;
+		.nav-link{
+			padding: 22px 48px 22px 32px;
+			font-size: 16px;
+			line-height: 19px;
+			font-weight: normal;
+			color: #fff;
+			transition: all 0.3s ease;
+			position: relative;
+			white-space: normal;
+			display: flex;
+			em{
+				width: 19px;
+				max-width: 19px;
+				flex:0 0 19px;
+				height: 19px;
+				background: #B82F2F;
+				border-radius: 50%;
+				font-size: 9px;
+				font-style: normal;
+				line-height: 19px;
+				text-align: center;
+				display: inline-block;
+				position: relative;
+				top: -3px;
+				top: -12px;
+				align-self: flex-end;
+			}
+			&:hover{
+				background: rgba(15, 193, 171, 0.05);
+			}
+			&.dropdown-toggle{
+				&:after{
+					display: block;
+					position: absolute;
+					right: 30px;
+					top: 25px;
+					border: 0;
+					margin: 0;
+					width: 12px;
+					height: 7px;
+					background-image: url("data:image/svg+xml,%3Csvg width='12' height='7' viewBox='0 0 12 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 6L6 1L11 6' stroke='%239DA7BE' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+					background-repeat: no-repeat;
+					background-position: 50% 50%;
+					transition: .3s ease;
+					transform: rotate(180deg);
+				}
+			}
+		}
+		&.show{
+			.nav-link{
+				&.dropdown-toggle{
+					&:after{
+						transform: rotate(0);
+					}
+				}
+			}
+		}
+		&.active{
+			.nav-link{
+				&.dropdown-toggle{
+					&:after{
+						transform: rotate(0) !important;
+					}
+				}
+			}
+			.dropdown-menu{
+				display: block;
+			}
+			.nav-link{
+				background: rgba(15, 193, 171, 0.05);
+				font-weight: 500;
+				&:before{
+					content: "";
+					width: 3px;
+					height: 100%;
+					position: absolute;
+					top: 0;
+					left: 0;
+					background: #0FC1AB;
+				}
+			}
+		}
+		.dropdown-menu{
+			transform:none !important;
+			position: static !important;
+			width: 100%;
+			background: none;
+			margin: 0;
+			padding: 0;
+			transition: .3s ease;
+			li{
+				margin-bottom: 10px;
+				&:last-child{
+					margin-bottom: 0;
+				}
+				a{
+					font-size: 14px;
+					line-height: 24px;
+					font-weight: normal;
+					color: #fff;
+					opacity: .7;
+					transition: .3s ease;
+					text-decoration: none;
+					padding: 12px 28px 12px 32px;
+					display: flex;
+					em{
+						font-style: normal;
+						opacity: 0.7 !important;
+						margin-left: auto;
+					}
+					&:hover{
+						opacity: 1;
+					}
+				}
+				&.active{
+					a{
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+}
