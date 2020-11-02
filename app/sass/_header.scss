@@ -1,6 +1,9 @@
 .header{
 	border-bottom: 1px solid #E4E8F0;
 	padding-left: 32px;
+	@include media-breakpoint-down(md) {
+		padding-left: 15px;
+	}
 	.btn_logout{
 		border-radius: 0;
 		padding: 28px 32px;
@@ -12,6 +15,64 @@
 		border-left: 1px solid #E4E8F0;
 		&:hover{
 			color: #000;
+		}
+		@include media-breakpoint-down(md) {
+			padding: 15px;
+		}
+	}
+	.user_name{
+		max-width: 200px;
+		span{
+			max-width: 32px;
+			flex:0 0 32px;
+		}
+		strong{
+			font-weight: normal;
+			padding-left: 16px;
+			padding-right: 32px;
+		}
+	}
+}
+.btn_menu{
+	width: 18px;
+	position: relative;
+	cursor: pointer;
+	height: 14px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	span{
+		display: block;
+		height: 2px;
+		width: 18px;
+		transition: .5s ease;
+		margin: 0 0 4px;
+		border-radius: 2px;
+		background: #181B25;
+		+ span{
+			margin-bottom: 4px;
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
+	}
+	&.active{
+		span{
+			position: absolute;
+			margin: 0 !important;
+			top: 6px;
+			&:nth-child(1){
+				transform: rotate(45deg);
+				left: 0;
+			}
+			&:nth-child(2){
+				width: 0;
+				// opacity: 0;
+			}
+			&:nth-child(3){
+				transform: rotate(-45deg);
+				right: 0;
+			}
 		}
 	}
 }

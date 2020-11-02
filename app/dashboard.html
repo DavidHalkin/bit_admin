@@ -11,8 +11,9 @@
 	</head>
 	<body>
 		<div class="wrapper">
+			<div class="sidebar_overlay sidebar_overlay_js"></div>
 			<div class="sidebar">
-				<strong class="logo"><a href="#"><img src="images/logo.svg" alt=""></a></strong>
+				<strong class="logo d-none d-lg-block"><a href="#"><img src="images/logo.svg" alt=""></a></strong>
 				<ul class="main_nav navbar-nav">
 					<li class="nav-item active">
 						<a href="#" class="nav-link">Dashboard</a>
@@ -60,21 +61,324 @@
 						<a href="#" class="nav-link">Settings</a>
 					</li>
 				</ul>
+
 			</div>
 			<div class="aside">
 				<div class="header d-flex align-items-center">
-					<span><strong>Admin</strong> v. 1.0.3</span>
-					<div class="etc_inf ml-auto">
-						<a href="#" class="btn btn_logout">Log Out</a>
+					<span class="d-none d-lg-block"><strong class="fw_500">Admin</strong> <span class="color_gray">v. 1.0.3</span></span>
+					<a class="d-block d-lg-none" href="#"><img src="images/logo-mobile.svg" alt=""></a>
+					<div class="etc_inf ml-auto d-flex">
+						<div class="user_name d-flex align-items-center">
+							<span><a href="#"><img src="https://picsum.photos/200" alt="" class="img-fluid rounded-circle"></a></span>
+							<strong class="text-truncate d-none d-lg-block">Cyril Yakovlev</strong>
+						</div>
+						<div class="btn_menu mx-3 align-self-center d-flex d-lg-none btn_menu_js">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<a href="#" class="btn btn_logout"><span class="d-none d-lg-block">Log Out</span> <i class="fas fa-sign-out-alt d-block d-lg-none"></i></a>
 					</div>
 				</div>
-				<div class="content">
-					
+				<div class="content px-3">
+					<div class="content_center">
+						<h1>Dashboard</h1>
+						<div class="mx-n3 mx-lg-0">
+							<div class="transaction_block d-flex flex-wrap transaction_block_js">
+								<div class="transaction_panel">
+									<div class="info_panel p-3">
+										<h4>Total transaction FIRST</h4>
+										<div class="d-flex flex-wrap align-items-center transaction_info">
+											<strong>€300,534.20</strong>
+											<span class="text-danger">51.2%</span>
+										</div>
+										<p class="mb-0">Yesterday €650,745.18</p>
+									</div>
+								</div>
+								<div class="transaction_panel">
+									<div class="info_panel p-3">
+										<h4>Total deposit cards</h4>
+										<div class="d-flex flex-wrap align-items-center transaction_info">
+											<strong>€230,534.30</strong>
+											<span class="text-success">16.2%</span>
+										</div>
+										<p class="mb-0">Yesterday €650,745.18</p>
+									</div>
+								</div>
+								<div class="transaction_panel">
+									<div class="info_panel p-3">
+										<h4>Total transaction value</h4>
+										<div class="d-flex flex-wrap align-items-center transaction_info">
+											<strong>€930,534.30</strong>
+											<span class="text-danger">5.1%</span>
+										</div>
+										<p class="mb-0">Yesterday €650,745.18</p>
+									</div>
+								</div>
+								<div class="transaction_panel">
+									<div class="info_panel p-3">
+										<h4>Total transactions amount</h4>
+										<div class="d-flex flex-wrap align-items-center transaction_info">
+											<strong>56,230</strong>
+											<span class="text-success">36.4%</span>
+										</div>
+										<p class="mb-0">Yesterday €650,745.18</p>
+									</div>
+								</div>
+								<div class="transaction_panel">
+									<div class="info_panel p-3">
+										<h4>Total users</h4>
+										<div class="d-flex flex-wrap align-items-center transaction_info">
+											<strong>645,456</strong>
+											<span class="text-success">10.2%</span>
+										</div>
+										<p class="mb-0">Yesterday €650,745.18</p>
+									</div>
+								</div>
+								<div class="transaction_panel">
+									<div class="info_panel p-3">
+										<h4>Total active users</h4>
+										<div class="d-flex flex-wrap align-items-center transaction_info">
+											<strong>153,204</strong>
+											<span class="text-danger">1.2%</span>
+										</div>
+										<p class="mb-0">Yesterday €650,745.18</p>
+									</div>
+								</div>
+								<div class="transaction_panel">
+									<div class="info_panel p-3">
+										<h4>Total personal users</h4>
+										<div class="d-flex flex-wrap align-items-center transaction_info">
+											<strong>75,456</strong>
+											<span class="text-success">13.2%</span>
+										</div>
+										<p class="mb-0">Yesterday €650,745.18</p>
+									</div>
+								</div>
+								<div class="transaction_panel">
+									<div class="info_panel p-3">
+										<h4>Total business users LAST</h4>
+										<div class="d-flex flex-wrap align-items-center transaction_info">
+											<strong>65,356</strong>
+											<span class="text-success">12.4%</span>
+										</div>
+										<p class="mb-0">Yesterday €6.18</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row align-items-center filter_block mx-n2">
+							<div class="col px-2">
+								<h3 class="mb-0 py-2">Real-time sales</h3>
+							</div>
+							<div class="col-12 col-lg-auto px-2 order-last order-lg-0 my-3 my-lg-0">
+								<ul class="list-unstyled mb-0 row nav flex-nowrap no-gutters list_filter" id="pills-tab" role="tablist">
+									<li class="col nav-item" role="presentation">
+										<a class="nav-link active" id="filter_1-tab" data-toggle="pill" href="#filter_1" role="tab" aria-controls="filter_1" aria-selected="true">Today</a>
+									</li>
+									<li class="col nav-item" role="presentation">
+										<a class="nav-link" id="filter_2-tab" data-toggle="pill" href="#filter_2" role="tab" aria-controls="filter_2" aria-selected="false">Yesterday</a>
+									</li>
+									<li class="col nav-item" role="presentation">
+										<a class="nav-link" id="filter_3-tab" data-toggle="pill" href="#filter_3" role="tab" aria-controls="filter_3" aria-selected="false">Week</a>
+									</li>
+									<li class="col nav-item" role="presentation">
+										<a class="nav-link" id="filter_4-tab" data-toggle="pill" href="#filter_4" role="tab" aria-controls="filter_4" aria-selected="false">Month</a>
+									</li>
+								</ul>
+							</div>
+							<div class="col-auto px-2">
+								<div class="dropdown dropdown_cstm">
+									<a class="btn btn-outline-light dropdown-toggle dropdown_toggle btn-block text-left text-truncate" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									IBANs
+									</a>
+									<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+										<a class="dropdown-item" href="#">Action</a>
+										<a class="dropdown-item" href="#">Another action</a>
+										<a class="dropdown-item" href="#">Something else here</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div  class="tab-content pt-3 pt-md-5" id="pills-tabContent">
+							<div class="tab-pane fade show active" id="filter_1" role="tabpanel" aria-labelledby="filter_1-tab">
+								<div class="time_sales row">
+									<div class="col-12 col-sm-6 col-md-4 col-lg-auto pb-3 pr-lg-5">
+										<div class="d-flex align-items-center flex-wrap">
+											<strong>€50,668.585345453</strong>
+											<span class="text-danger"><i class="fas fa-arrow-down"></i> <span>51.2%</span></span>
+										</div>
+										<p>Transactions value</p>
+									</div>
+									<div class="col-12 col-sm-6 col-md-4 col-lg-auto pb-3 pr-lg-5">
+										<div class="d-flex align-items-center flex-wrap">
+											<strong>€1,668.65</strong>
+											<span class="text-success"><i class="fas fa-arrow-up"></i> <span>51.2%</span></span>
+										</div>
+										<p>Fee profit</p>
+									</div>
+									<div class="col-12 col-sm-6 col-md-4 col-lg-auto pb-3 pr-lg-5">
+										<div class="d-flex align-items-center flex-wrap">
+											<strong>572</strong>
+											<span class="text-success"><i class="fas fa-arrow-up"></i> <span>51.2%</span></span>
+										</div>
+										<p>Amounts of transactions</p>
+									</div>
+								</div>
+								<div class="ct-chart ct-perfect-fourth" style="height: 256px;"></div>
+								
+							</div>
+							<div class="tab-pane fade" id="filter_2" role="tabpanel" aria-labelledby="filter_2-tab">...chart2...</div>
+							<div class="tab-pane fade" id="filter_3" role="tabpanel" aria-labelledby="filter_3-tab">..chart3.</div>
+							<div class="tab-pane fade" id="filter_4" role="tabpanel" aria-labelledby="filter_4-tab">..chart4.</div>
+						</div>
+						<div class="row history_block pt-3 pt-md-5">
+							<div class="col-12 col-xl-6 pb-4 pb-xl-0 pr-xl-5">
+								<div class="d-flex flex-wrap align-items-center ttl_line pb-3 pb-md-5">
+									<h3>Transactions history</h3>
+									<a href="#" class="text-success ml-auto">View all</a>
+								</div>
+								<ul class="list-unstyled mb-0 list_history">
+									<li>
+										<a href="#" class="row mx-n2">
+											<span class="col-auto px-2">
+												<span class="ava_block rounded-circle">
+													<i class="fas fa-arrow-right text_muted"></i>
+												</span>
+											</span>
+											<span class="col px-2">
+												<strong class="d-block">#23425 Payment from SIA MONEY EXPRESS to CAPITAL MARKET LTD</strong>
+												<em class="data d-block">Mar 21, 2019, 13:30</em>
+											</span>
+											<span class="col-12 col-sm-auto px-2 text-sm-right hist_data">
+												<span class="cost d-block">$200010.00</span>
+												<span class="status text-warning d-block">Pending</span>
+											</span>
+										</a>
+									</li>
+									<li>
+										<div class="row mx-n2">
+											<span class="col-auto px-2">
+												<span class="ava_block rounded-circle">
+													<i class="fas fa-arrow-right text_muted"></i>
+												</span>
+											</span>
+											<span class="col px-2">
+												<strong class="d-block"><em class="text-danger">не кликабельный item</em> from BELDEV CONSULTING OU to PAYBIS LTD</strong>
+												<em class="data d-block">Mar 21, 2019, 13:30</em>
+											</span>
+											<span class="col-12 col-sm-auto px-2 text-sm-right hist_data">
+												<span class="cost d-block">$200.00</span>
+												<span class="status text-success d-block">Completed</span>
+											</span>
+										</div>
+									</li>
+									<li>
+										<a href="#" class="row mx-n2">
+											<span class="col-auto px-2">
+												<span class="ava_block rounded-circle">
+													<i class="fas fa-arrow-right text_muted"></i>
+												</span>
+											</span>
+											<span class="col px-2">
+												<strong class="d-block">#23423 Payment from</strong>
+												<em class="data d-block">Mar 21, 2019, 13:30</em>
+											</span>
+											<span class="col-12 col-sm-auto px-2 text-sm-right hist_data">
+												<span class="cost d-block">$200.00</span>
+												<span class="status text-success d-block">Completed</span>
+											</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="col-12 col-xl-6 pr-xl-5">
+								<div class="d-flex flex-wrap align-items-center ttl_line pb-3 pb-md-5">
+									<h3>New customers</h3>
+									<a href="#" class="text-success ml-auto">View all</a>
+								</div>
+								<ul class="list-unstyled mb-0 list_history">
+									<li>
+										<a href="#" class="row mx-n2">
+											<span class="col-auto px-2">
+												<span class="ava_block rounded-circle">
+													<em>F</em>
+												</span>
+											</span>
+											<span class="col px-2">
+												<strong class="d-block">FILEBASE LTD with ID: #12345</strong>
+												<em class="data d-block">Mar 21, 2019, 13:30</em>
+											</span>
+										</a>
+									</li>
+									<li>
+										<a href="#" class="row mx-n2">
+											<span class="col-auto px-2">
+												<span class="ava_block rounded-circle">
+													<em>ps</em>
+												</span>
+											</span>
+											<span class="col px-2">
+												<strong class="d-block">Peters Svanson with ID: #12345 </strong>
+												<em class="data d-block">8:32</em>
+											</span>
+										</a>
+									</li>
+									<li>
+										<a href="#" class="row mx-n2">
+											<span class="col-auto px-2">
+												<span class="ava_block rounded-circle">
+													<em>tw</em>
+												</span>
+											</span>
+											<span class="col px-2">
+												<strong class="d-block">Terry Wase with ID: #12345</strong>
+												<em class="data d-block">8:32</em>
+											</span>
+										</a>
+									</li>
+									<li>
+										<a href="#" class="row mx-n2">
+											<span class="col-auto px-2">
+												<span class="ava_block rounded-circle">
+													<em>av</em>
+												</span>
+											</span>
+											<span class="col px-2">
+												<strong class="d-block">Aigar Vilnis with ID: #12345</strong>
+												<em class="data d-block">8:32</em>
+											</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 		<script src="js/jquery.min.js"></script>
 		<script src="js/bootstrap.bundle.min.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/chartist.min.js"></script>
 		<script src="js/main.js"></script>
+		<script>
+			new Chartist.Bar('.ct-chart', {
+			  labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+			  series: [
+			    [5, 4, 3, 7, 5, 10, 3],
+			    [3, 2, 9, 5, 4, 6, 4]
+			  ]
+			}, {
+			  axisX: {
+			    // On the x-axis start means top and end means bottom
+			    position: 'start'
+			  },
+			  axisY: {
+			    // On the y-axis start means left and end means right
+			    position: 'end'
+			  }
+			});
+		</script>
 	</body>
 </html>
