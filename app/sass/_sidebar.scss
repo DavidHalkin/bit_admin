@@ -141,6 +141,7 @@
 				}
 				&.active{
 					a{
+						color:theme-color("success");
 						opacity: 1;
 					}
 				}

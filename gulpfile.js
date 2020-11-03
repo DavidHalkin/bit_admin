@@ -98,9 +98,11 @@ gulp.task('scripts', function() {
 	return gulp.src([ // Берем все необходимые библиотеки
 		'bower_components/jquery/dist/jquery.min.js',
 		'bower_components/bootstrap/dist/js/bootstrap.bundle.min.js',
-		'bower_components/responsive-tabs/js/jquery.responsiveTabs.min.js',
 		'bower_components/owl.carousel/dist/owl.carousel.min.js',
 		'bower_components/chartist/dist/chartist.min.js',
+		'bower_components/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js',
+		'bower_components/datatables.net/js/jquery.dataTables.min.js',
+		'bower_components/bootstrap-select/dist/js/bootstrap-select.min.js',
 		])
 		// .pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
 		// .pipe(uglify()) // Сжимаем JS файл
@@ -116,7 +118,9 @@ gulp.task('css-libs', ['sass'], function() {
 		'bower_components/owl.carousel/dist/assets/owl.theme.green.css',
 		'bower_components/owl.carousel/dist/assets/owl.carousel.css',
 		'bower_components/chartist/dist/chartist.min.css',
-		
+		'bower_components/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.css',
+		'bower_components/datatables.net-dt/css/jquery.dataTables.min.css',
+		'bower_components/bootstrap-select/dist/css/bootstrap-select.min.css',
 		])
 		.pipe(sourcemaps.init())
 		.pipe(cssnano())

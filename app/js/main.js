@@ -1,5 +1,18 @@
 
 $(document).ready(function(){
+
+    $('[data-toggle="tooltip"]').tooltip(); 
+
+    $(".collapse_toggle_link_js").click(function(){
+        if($(this).find("i").hasClass("fa-chevron-up")){
+                $(this).find("i").removeClass("fa-chevron-up").addClass("fa-chevron-down");;
+            }
+            else{
+                $(this).find("i").removeClass("fa-chevron-down").addClass("fa-chevron-up");
+            }
+        // $(this).find("i").toggleClass('fa-chevron-up fa-chevron-down');
+        // $("button").attr("aria-expanded","true");
+    });
 	$(".btn_menu_js").click(function(){
 		$(this).toggleClass("active");
 		$("body").toggleClass("body_overflow");
@@ -39,4 +52,7 @@ $(document).ready(function(){
     }
     postsCarousel();
     $(window).resize(postsCarousel);
+});
+$(document).on('shown.bs.tab', 'a[data-toggle="tab"]', function (e) {
+    $.fn.dataTable.tables({ visible: true, api: true }).columns.adjust();
 });
