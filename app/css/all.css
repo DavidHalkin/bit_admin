@@ -16,6 +16,18 @@ a:hover { text-decoration: none; }
 
 .btn-outline-light { color: #000; }
 
+.dropdown_cstm .ico img { width: 20px; height: 20px; -webkit-border-radius: 50%; border-radius: 50%; display: block; }
+
+.dropdown_cstm .dropdown-menu { max-height: 250px; overflow: auto; }
+
+.dropdown_cstm .dropdown-menu .dropdown-item { padding-left: 12px; }
+
+.dropdown_cstm .info_field { padding-top: 7px; padding-bottom: 7px; }
+
+.dropdown_cstm .info_field strong { font-size: 16px; line-height: 18px; color: #000; font-weight: normal; max-width: 130px; padding-right: 5px; overflow: hidden; -o-text-overflow: ellipsis; text-overflow: ellipsis; white-space: nowrap; }
+
+.dropdown_cstm .info_field em { font-style: normal; color: #4C5461; font-size: 16px; line-height: 18px; }
+
 .dropdown_cstm .dropdown-toggle { position: relative; padding-right: 30px; }
 
 .dropdown_cstm .dropdown-toggle:after { position: absolute; top: 50%; right: 15px; border: 0; width: 9px; height: 9px; margin-top: -1px; border-left: 2px solid #9da7be; border-bottom: 2px solid #9da7be; -webkit-transform: translateY(-50%) rotate(-45deg); -ms-transform: translateY(-50%) rotate(-45deg); transform: translateY(-50%) rotate(-45deg); -webkit-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; }

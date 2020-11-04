@@ -40,7 +40,43 @@ a{
 	color: #000;
 }
 .dropdown_cstm{
-	
+	.ico{
+		img{
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
+			display: block;
+		}
+	}
+	.dropdown-menu{
+		max-height: 250px;
+		overflow: auto;
+		.dropdown-item{
+			padding-left: 12px;
+		}
+		
+	}
+	.info_field{
+		padding-top: 7px;
+		padding-bottom: 7px;
+		strong{
+			font-size: 16px;
+			line-height: 18px;
+			color: #000;
+			font-weight: normal;
+			max-width: 130px;
+			padding-right: 5px;
+			@include text-truncate();
+		}
+		em{
+			font-style: normal;
+			color: #4C5461;
+			font-size: 16px;
+			line-height: 18px;
+			// max-width: 120px;
+			// @include text-truncate();
+		}
+	}
 	.dropdown-toggle{
 		position: relative;
 		padding-right: 30px;
