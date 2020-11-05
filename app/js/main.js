@@ -1,7 +1,28 @@
+// flying btn "back"
+function resizeBlock(){
+    if(window.matchMedia("screen and (max-width: 992px)").matches) {
+        $('.back_btn_js').insertBefore($('.header .etc_inf'));
+    }
+    else if (window.matchMedia("screen and (min-width: 992px)").matches){
+        $('.back_btn_js').appendTo($('.back_btn_holder_js'));
+    }
+}
+
+$(window).resize(function() {
+    resizeBlock();
+});
+// flying btn "back" end + in $(document).ready
 
 $(document).ready(function(){
 
-    $('[data-toggle="tooltip"]').tooltip(); 
+    resizeBlock();
+
+    $('[data-toggle="tooltip"]').tooltip();
+
+    $('.show_info_js').click(function () {
+       $('.user_bottom_info_js').slideDown();
+       $(this).hide();
+    });
 
     $(".collapse_toggle_link_js").click(function(){
         if($(this).find("i").hasClass("fa-chevron-up")){

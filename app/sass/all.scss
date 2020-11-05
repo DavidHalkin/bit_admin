@@ -291,6 +291,24 @@
 		color: #9DA7BE;
 		font-size: 24px;
 	}
+	&.ava_block_big{
+		width: 104px;
+		height: 104px;
+		max-width: 104px;
+		flex:0 0 104px;
+		em{
+			font-size: 36px;
+		}
+		@include media-breakpoint-down(md) {
+			width: 56px;
+			max-width: 56px;
+			flex:0 0 56px;
+			height: 56px;
+			em{
+				font-size: 24px;
+			}
+		}
+	}
 }
 .nav_tabs{
 	border-bottom: 1px solid #E4E8F0;
@@ -490,5 +508,144 @@
 				padding-bottom: 0;
 			}
 		}
+	}
+}
+.profile_sidebar{
+	@include media-breakpoint-up(lg) {
+		width: 300px;
+	}
+	.user_top_info{
+		h4{
+			font-weight: 500;
+			font-size: 20px;
+			line-height: 24px;
+			margin: 0  0 12px 0;
+		}
+		p{
+			color: #4C5461;
+			font-size: 16px;
+			line-height: 18px;
+		}
+	}
+}
+.nav_user_info{
+	span{
+		color: #4C5461;
+		display: block;
+		font-size: 14px;
+		line-height: 17px;
+		padding-bottom: 8px;
+	}
+	strong{
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 19px;
+		color: #000;
+	}
+}
+.alert_text{
+	p{
+		font-size: 14px;
+		line-height: 17px;
+		color: #000;
+
+	}
+	strong{
+		font-size: 16px;
+		line-height: 19px;
+		font-weight: normal;
+	}
+}
+.docs_block{
+	h4{
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 19px;
+	}
+}
+.show_info{
+	cursor: pointer;
+	i{
+		font-size: 24px;
+	}
+	span{color: #4C5461;}
+}
+.show_info{
+	@include media-breakpoint-up(lg) {
+		display: none;
+	}
+	@include media-breakpoint-down(md) {
+		display: flex;
+	}
+}
+.user_bottom_info{
+	@include media-breakpoint-down(md) {
+		display: none;
+	}
+}
+.ico_holder{
+	height: 35px;
+	width: 35px;
+	i{
+		font-size: 18px;
+	}
+	img{
+		max-width: 100%;
+		display: block;
+		height: auto;
+	}
+}
+.list_data{
+	.data_info{
+		color: #000;
+		span{
+			font-size: 12px;
+			line-height: 14px;
+		}
+		.data_sum{
+			font-size: 16px;
+			line-height: 17px;
+		}
+	}
+	a{
+		&:hover{
+			background:rgba(theme-color("success"),.05);
+		}
+	}
+}
+.account_sum{
+	font-weight: 500;
+	font-size: 48px;
+	line-height: 50px;
+}
+.mxw_label{
+	max-width: 35px;
+	img{
+		display: block;
+		max-width: 100%;
+		height: auto;
+	}
+}
+.back_btn{
+	
+	height: 48px;
+	
+	border-radius: 5px;
+	border: 1px solid #E4E8F0;
+	background: #fff;
+	text-align: center;
+	justify-content: center;
+	align-items:center;
+	margin-bottom: 10px;
+	width: 48px;
+		max-width: 48px;
+		flex:0 0 48px;
+	i{
+		color: #7A8595;
+	}
+}
+.back_btn_holder{
+	.back_btn{
+		margin-bottom: 48px;
 	}
 }

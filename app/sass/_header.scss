@@ -1,6 +1,17 @@
 .header{
 	border-bottom: 1px solid #E4E8F0;
 	padding-left: 32px;
+	.back_btn {
+		height: 30px;
+		width: 30px;
+		max-width: 30px;
+		flex:0 0 30px;
+		margin: 0 0 0 16px;
+		border-radius: 3px;
+		i{
+			font-size: 14px;
+		}
+	}
 	@include media-breakpoint-down(md) {
 		padding-left: 15px;
 	}
