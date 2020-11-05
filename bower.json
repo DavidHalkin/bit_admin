@@ -13,10 +13,9 @@
     "bootstrap": "^4.2.1",
     "font-awesome": "^5.13.0",
     "owl.carousel": "^2.3.4",
-    "chartist": "^0.11.4",
-    "chartist-plugin-tooltip": "^0.0.18",
     "datatables.net-dt": "^3.2.2",
-    "bootstrap-select": "^1.13.18"
+    "bootstrap-select": "^1.13.18",
+    "chart.js": "^2.9.4"
   },
   "devDependencies": {}
 }

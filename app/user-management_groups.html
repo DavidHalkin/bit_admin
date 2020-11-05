@@ -82,56 +82,62 @@
 				</div>
 				<div class="content px-3">
 					<div class="content_center">
-						<h1>Verify transactions</h1>
-						<table class="custom_dataTables" id="dataTables_1" class="display nowrap" style="width:100%">
-							<thead>
-								<tr>
-									<th class="name_ava_th">ID</th>
-									<th class="text-nowrap">From</th>
-									<th class="text-nowrap">To</th>
-									<th class="text-nowrap">Submission date</th>
-									<th class="text-nowrap">Amount</th>
-									<th class="text-nowrap">Fee</th>
-									<th class="text-right">&#160;</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>
-										<div class="d-flex align-items-center ava_name">
-											<a href="#">
-												<span class="ava_block rounded-circle">
-													<em>jw</em>
-												</span>
-											</a>
-											<strong class="text-truncate">#23423</strong>
-										</div>
-									</td>
-									<td>Dropbox LLC</td>
-									<td>Google LLC</td>
-									<td>Oct 23, 2019 18:00</td>
-									<td>$100.00</td>
-									<td>$5.00</td>
-									<td class="text-right"><a href="#" class="text-success fw_500">View</a></td>
-								</tr>
-								<tr>
-									<td>
-										<div class="d-flex align-items-center ava_name">
-											<span class="ava_block rounded-circle">
-												<i class="fas fa-arrow-right text_muted"></i>
-											</span>
-											<strong class="text-truncate">#23423</strong>
-										</div>
-									</td>
-									<td>Dropbox LLC</td>
-									<td>Google LLC</td>
-									<td>Oct 23, 2019 18:00</td>
-									<td>$100.00</td>
-									<td>$5.00</td>
-									<td class="text-right"><a href="modals.html" class="text-danger fw_500">modal at modals.html</a></td>
-								</tr>
-							</tbody>
-						</table>
+						<h1>Groups</h1>
+						<ul class="nav nav-tabs nav_tabs" id="nav-tab" role="tablist">
+							<li class="nav-item" role="presentation">
+								<a class="nav-link active" id="nav-tab1-tab" data-toggle="tab" href="#nav-tab1" role="tab" aria-controls="nav-tab1" aria-selected="true">Administrators</a>
+							</li>
+							<li class="nav-item" role="presentation">
+								<a class="nav-link" id="nav-tab2-tab" data-toggle="tab" href="#nav-tab2" role="tab" aria-controls="nav-tab2" aria-selected="false">Moderators</a>
+							</li>
+							<li class="nav-item" role="presentation">
+								<a class="nav-link" id="nav-tab3-tab" data-toggle="tab" href="#nav-tab3" role="tab" aria-controls="nav-tab3" aria-selected="false">Moderators</a>
+							</li>
+						</ul>
+						<div class="tab-content pt-4 mt-2" id="nav-tabContent">
+							<div class="tab-pane fade show active" id="nav-tab1" role="tabpanel" aria-labelledby="nav-tab1-tab">
+								<div class="row">
+									<div class="col-12 col-xl-5">
+										<ul class="list-unstyled">
+											<li class="pb-4">
+												<label class="checkbox_slider">
+													<input type="checkbox" class="checkbox_input" name="checkbox">
+													<span class="checkbox_text col pl-0">Lorem ipsum dolor sit amet</span>
+													<span class="checkbox_anim"></span>
+												</label>
+											</li>
+											<li class="pb-4">
+												<label class="checkbox_slider">
+													<input type="checkbox" class="checkbox_input" name="checkbox" disabled="">
+													<span class="checkbox_text col pl-0">disabled</span>
+													<span class="checkbox_anim"></span>
+												</label>
+											</li>
+											<li class="pb-4">
+												<label class="checkbox_slider">
+													<input type="checkbox" class="checkbox_input" name="checkbox">
+													<span class="checkbox_text col pl-0">Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Et accusamus quas adipisci? Itaque quasi praesentium expedita possimus iure, repudiandae pariatur eveniet deleniti molestias quibusdam fugit distinctio consequatur. Tempore totam, minima?</span>
+													<span class="checkbox_anim"></span>
+												</label>
+											</li>
+											<li class="pb-4">
+												<label class="checkbox_slider">
+													<input type="checkbox" class="checkbox_input" name="checkbox" checked="">
+													<span class="checkbox_text col pl-0">Lorem ipsum dolor sit amet</span>
+													<span class="checkbox_anim"></span>
+												</label>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="nav-tab2" role="tabpanel" aria-labelledby="nav-tab2-tab">
+								2
+							</div>
+							<div class="tab-pane fade" id="nav-tab3" role="tabpanel" aria-labelledby="nav-tab3-tab">
+								3
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -142,24 +148,5 @@
 		<script src="js/jquery.dataTables.min.js"></script>
 		<script src="js/bootstrap-select.min.js"></script>
 		<script src="js/main.js"></script>
-		<script>
-			$(document).ready(function() {
-			    // $('.dataTables_js').DataTable({
-			    	
-			    // });
-				var table_1 = $('#dataTables_1').DataTable({
-					// "dom": 'rt',
-					"searching": false,
-					"ordering": false,
-					paging: false,
-					"scrollX": true,
-					"lengthChange": false,
-					"bInfo": false
-				});
-  		// 		$('#dataTables_input_1').on( 'keyup', function () {
-				//     table_1.search( this.value ).draw();
-				// } );
-			} );
-		</script>
 	</body>
 </html>

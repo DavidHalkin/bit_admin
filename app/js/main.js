@@ -56,3 +56,104 @@ $(document).ready(function(){
 $(document).on('shown.bs.tab', 'a[data-toggle="tab"]', function (e) {
     $.fn.dataTable.tables({ visible: true, api: true }).columns.adjust();
 });
+
+// $(document).ready(function () {
+//     // 1
+//     var ctx = document.getElementById("barChart").getContext('2d');
+//         var barChart = new Chart(ctx, {
+//           type: 'bar',
+//           data: {
+//             labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sst", "Sun"],
+//             datasets: [{
+//               label: 'data-1',
+//               data: [12, 19, 3, 17, 28, 24, 7],
+//               backgroundColor: "#13BFAA"
+//             }, {
+//               label: 'data-2',
+//               data: [30, 29, 5, 5, 20, 3, 10],
+//               backgroundColor: "#13BFAA"
+//             }]
+//           },
+//           options:{
+//             responsive: true,
+//             maintainAspectRatio: false,
+//             scales: {
+//                 xAxes: [{
+//                     barThickness: 'flex',
+//                     maxBarThickness: 10 
+//                 }]
+//             }
+//           }
+//         });
+//     // 2
+//     var speedCanvas = document.getElementById("speedChart").getContext('2d'),
+//         gradient = speedCanvas.createLinearGradient(0, 0, 0, 450);
+
+//     gradient.addColorStop(0, 'rgba(15, 193, 171, 0.11)');
+//     gradient.addColorStop(0.45, 'rgba(15, 193, 171, 0.06)');
+//     gradient.addColorStop(0.91, 'rgba(15, 193, 171, 0)');
+
+//     Chart.defaults.global.defaultFontFamily = "Rubik";
+//     Chart.defaults.global.defaultFontSize = 14;
+
+//     var speedData = {
+//         labels: ["Sep 21", "Sep 28", "Oct 5", "Oct 12", "Oct 19", "Oct 26"],
+//         datasets: [{
+//             label: "Oct 7, 15:28",
+//             data: [0, 10, 15, 12, 20, 18],
+//             backgroundColor: gradient,
+//             borderColor: "#0FC1AB",
+//             borderWidth: 2
+//         }],
+
+//     };
+
+//     var chartOptions = {
+//         legend: {
+//             display: false,
+//         },
+//         responsive: true,
+//         maintainAspectRatio: false,
+//         scales: {
+//             xAxes: [{
+//                 gridLines: {
+//                     color: '#E9EEF2',
+//                     lineWidth: 1.2
+//                 }
+//             }],
+//             yAxes: [{
+//                 gridLines: {
+//                     color: '#E9EEF2',
+//                     lineWidth: 1.2
+//                 }
+//             }]
+//         },
+//         point: {
+//             backgroundColor: 'white',
+//             borderColor: '#0FC1AB',
+//             borderWidth: 2,
+//         },
+//         tooltips: {
+//             bodyFontFamily: 'Rubik',
+//             bodyFontSize: 14,
+//             bodyFontColor: '#4C5461',
+//             titleMarginBottom: 8,
+//             titleFontFamily: 'Rubik',
+//             titleFontSize: 16,
+//             titleFontStyle: 'normal',
+//             backgroundColor: '#FFFFFF',
+//             titleFontColor: '#000',
+//             caretSize: 5,
+//             cornerRadius: 2,
+//             xPadding: 10,
+//             yPadding: 20
+//         }
+//     };
+
+//     var lineChart = new Chart(speedCanvas, {
+//         type: 'line',
+//         data: speedData,
+//         options: chartOptions
+//     });
+
+// });

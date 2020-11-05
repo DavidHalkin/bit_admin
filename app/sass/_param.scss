@@ -39,6 +39,9 @@ a{
 .btn-outline-light{
 	color: #000;
 }
+.minw_0{
+	min-width: 0;
+}
 .dropdown_cstm{
 	.ico{
 		img{
@@ -155,6 +158,9 @@ a{
 		}
 	}
 }
+.fz_20{
+	font-size: 20px;
+}
 .ava_name{
 	max-width: 220px;
 	strong{
@@ -169,6 +175,22 @@ a{
 		max-width: 48px;
 		flex:0 0 48px;
 		height: 48px;
+	}
+}
+.ava_block{
+	span{
+		background:#fff;
+		display: flex;
+		align-items:center;
+		justify-content: center;
+		width: 100%;
+		height: 100%;
+		border: 1px solid #E4E8F0;
+		border-radius: 50%;
+		img{
+			max-width: 80%;
+			border-radius: 50%;
+		}
 	}
 }
 .info_circle{
@@ -216,6 +238,9 @@ a{
 			height: auto;
 		}
 	}
+}
+.color_gray_2{
+	color: #7A8595;
 }
 .ico_close{
 	width: 12px;
@@ -290,6 +315,20 @@ a{
 .btn-outline_gray{
 	border: 1px solid #E4E8F0;
 }
+.border_gray{
+	border-color: #E4E8F0;
+}
+.bordered_table{
+	thead{
+		th{
+			border-bottom-width: 1px;
+			font-size: 16px;
+			line-height: 17px;
+			color: #4C5461;
+			font-weight: normal;
+		}
+	}
+}
 .custom_radio{
 	&.custom-control-inline{
 		padding-left: 31px;
@@ -307,5 +346,63 @@ a{
 	}
 	.custom-control-input:checked ~ .custom-control-label::after{
 		background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%230FC1AB'/%3e%3c/svg%3e") !important;
+	}
+}
+.rounded_2{
+	border-radius: 2px !important;
+}
+.fz_14{
+	font-size: 14px !important;
+}
+.checkbox_slider{
+	display: flex;
+	.checkbox_input:checked ~ .checkbox_anim{
+		background: #0FC1AB;
+	}
+	.checkbox_input:disabled ~ .checkbox_anim,
+	.checkbox_input:disabled ~ .checkbox_text{
+		opacity: 0.5;
+		cursor: inherit;
+	}
+	.checkbox_input:checked ~ .checkbox_anim{
+		&:after{
+			// right: auto;
+			// left: 2px;
+			left: auto;
+			right: 2px;
+		}
+	}
+	.checkbox_input{
+		display: none;
+	}
+	.checkbox_text{
+		// flex-grow: 1;
+		// max-width: 100%;
+		// flex-basis: 0;
+		cursor: pointer;
+		padding-right: 15px;
+	}
+	.checkbox_anim{
+		position: relative;
+		max-width: 42px;
+		flex:0 0 42px;
+		height: 24px;
+		border-radius: 30px;
+		transition: .5s;
+		display: flex;
+		cursor: pointer;
+		background: #E4E8F0;
+		&:after{
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 2px;
+			transform: translate(0, -50%);
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
+			background: #fff;
+			// background: #000;
+		}
 	}
 }

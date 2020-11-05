@@ -82,56 +82,26 @@
 				</div>
 				<div class="content px-3">
 					<div class="content_center">
-						<h1>Verify transactions</h1>
-						<table class="custom_dataTables" id="dataTables_1" class="display nowrap" style="width:100%">
-							<thead>
-								<tr>
-									<th class="name_ava_th">ID</th>
-									<th class="text-nowrap">From</th>
-									<th class="text-nowrap">To</th>
-									<th class="text-nowrap">Submission date</th>
-									<th class="text-nowrap">Amount</th>
-									<th class="text-nowrap">Fee</th>
-									<th class="text-right">&#160;</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>
-										<div class="d-flex align-items-center ava_name">
-											<a href="#">
-												<span class="ava_block rounded-circle">
-													<em>jw</em>
-												</span>
-											</a>
-											<strong class="text-truncate">#23423</strong>
-										</div>
-									</td>
-									<td>Dropbox LLC</td>
-									<td>Google LLC</td>
-									<td>Oct 23, 2019 18:00</td>
-									<td>$100.00</td>
-									<td>$5.00</td>
-									<td class="text-right"><a href="#" class="text-success fw_500">View</a></td>
-								</tr>
-								<tr>
-									<td>
-										<div class="d-flex align-items-center ava_name">
-											<span class="ava_block rounded-circle">
-												<i class="fas fa-arrow-right text_muted"></i>
-											</span>
-											<strong class="text-truncate">#23423</strong>
-										</div>
-									</td>
-									<td>Dropbox LLC</td>
-									<td>Google LLC</td>
-									<td>Oct 23, 2019 18:00</td>
-									<td>$100.00</td>
-									<td>$5.00</td>
-									<td class="text-right"><a href="modals.html" class="text-danger fw_500">modal at modals.html</a></td>
-								</tr>
-							</tbody>
-						</table>
+						<h1>Permissions</h1>
+						<a href="#" class="btn btn-outline-success btn-lg">Add permission</a>
+						<div class="row pt-5">
+							<div class="col-12 col-xl-5">
+								<ul class="list-unstyled">
+									<li class="row flex-nowrap pb-4">
+										<span class="col">Lorem ipsum dolor sit amet</span>
+										<span class="col-auto"><a href="#" class="far fa-trash-alt fz_20 color_gray_2"></a></span>
+									</li>
+									<li class="row flex-nowrap pb-4">
+										<span class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste dolore deleniti tempore veritatis sapiente maiores alias voluptatem esse hic blanditiis autem nam, placeat eligendi non omnis quaerat a obcaecati accusamus.</span>
+										<span class="col-auto"><a href="#" class="far fa-trash-alt fz_20 color_gray_2"></a></span>
+									</li>
+									<li class="row flex-nowrap pb-4">
+										<span class="col">Lorem ipsum dolor sit amet</span>
+										<span class="col-auto"><a href="#" class="far fa-trash-alt fz_20 color_gray_2"></a></span>
+									</li>
+								</ul>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -142,24 +112,5 @@
 		<script src="js/jquery.dataTables.min.js"></script>
 		<script src="js/bootstrap-select.min.js"></script>
 		<script src="js/main.js"></script>
-		<script>
-			$(document).ready(function() {
-			    // $('.dataTables_js').DataTable({
-			    	
-			    // });
-				var table_1 = $('#dataTables_1').DataTable({
-					// "dom": 'rt',
-					"searching": false,
-					"ordering": false,
-					paging: false,
-					"scrollX": true,
-					"lengthChange": false,
-					"bInfo": false
-				});
-  		// 		$('#dataTables_input_1').on( 'keyup', function () {
-				//     table_1.search( this.value ).draw();
-				// } );
-			} );
-		</script>
 	</body>
 </html>

@@ -225,8 +225,10 @@
 										<p>Amounts of transactions</p>
 									</div>
 								</div>
-								<div class="ct-chart ct-perfect-fourth" style="height: 256px;"></div>
-								
+								<!-- <div class="ct-chart ct-perfect-fourth" style="height: 256px;"></div> -->
+								<div class="">
+									<canvas id="barChart" class="chart_holder"></canvas>
+								</div>
 							</div>
 							<div class="tab-pane fade" id="filter_2" role="tabpanel" aria-labelledby="filter_2-tab">...chart2...</div>
 							<div class="tab-pane fade" id="filter_3" role="tabpanel" aria-labelledby="filter_3-tab">..chart3.</div>
@@ -360,34 +362,38 @@
 		<script src="js/jquery.min.js"></script>
 		<script src="js/bootstrap.bundle.min.js"></script>
 		<script src="js/owl.carousel.min.js"></script>
-		<script src="js/chartist.min.js"></script>
-		<script src="js/chartist-plugin-tooltip.min.js"></script>
+		<script src="js/Chart.min.js"></script>
 		<script src="js/main.js"></script>
 		<script>
-			new Chartist.Bar('.ct-chart', {
-			  labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
-			  series: [
-			    [5, 4, 3, 7, 5, 10, 3],
-			    [3, 2, 9, 5, 4, 6, 4]
-			  ]
-			},
-			{
-				plugins: [
-					Chartist.plugins.tooltip()
-				]
-			},
-			{
-			  axisX: {
-			    // On the x-axis start means top and end means bottom
-			    position: 'start'
-			  },
-			  axisY: {
-			    // On the y-axis start means left and end means right
-			    position: 'end'
-			  }
-			}
-			);
+			$(document).ready(function () {
+			    var ctx = document.getElementById("barChart").getContext('2d');
+			    var barChart = new Chart(ctx, {
+			      type: 'bar',
+			      data: {
+			        labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sst", "Sun"],
+			        datasets: [{
+			          label: 'data-1',
+			          data: [12, 19, 3, 17, 28, 24, 7],
+			          backgroundColor: "#13BFAA"
+			        }, {
+			          label: 'data-2',
+			          data: [30, 29, 5, 5, 20, 3, 10],
+			          backgroundColor: "#13BFAA"
+			        }]
+			      },
+			      options:{
+			        responsive: true,
+			        maintainAspectRatio: false,
+			        scales: {
+			            xAxes: [{
+			                barThickness: 'flex',
+			                maxBarThickness: 10 
+			            }]
+			        }
+			      }
+			    });
 
+			});
 		</script>
 	</body>
 </html>
