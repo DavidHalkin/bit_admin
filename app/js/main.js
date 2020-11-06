@@ -52,18 +52,18 @@ $(document).ready(function(){
 	function postsCarousel() {
         var checkWidth = $(window).width();
         var owlPost = $(".transaction_block_js");
-        if (checkWidth > 992) {
+        if (checkWidth > 991) {
             if(typeof owlPost.data('owl.carousel') != 'undefined'){
                 owlPost.data('owl.carousel').destroy();
             }
             owlPost.removeClass('owl-carousel owl-theme ');
-        } else if (checkWidth < 992) {
+        } else if (checkWidth < 991) {
             owlPost.addClass('owl-carousel owl-theme ');
             owlPost.owlCarousel({
                 items : 2,
                 smartSpeed: 1000,
                 slideSpeed: 700,
-                autoplay: true,
+                // autoplay: true,
                 dots: true,
                 autoWidth:true,
                 loop: true,
