@@ -1,9 +1,9 @@
 // flying btn "back"
 function resizeBlock(){
-    if(window.matchMedia("screen and (max-width: 992px)").matches) {
+    if(window.matchMedia("screen and (max-width: 991px)").matches) {
         $('.back_btn_js').insertBefore($('.header .etc_inf'));
     }
-    else if (window.matchMedia("screen and (min-width: 992px)").matches){
+    else if (window.matchMedia("screen and (min-width: 991px)").matches){
         $('.back_btn_js').appendTo($('.back_btn_holder_js'));
     }
 }

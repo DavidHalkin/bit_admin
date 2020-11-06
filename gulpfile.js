@@ -102,6 +102,8 @@ gulp.task('scripts', function() {
 		'bower_components/datatables.net/js/jquery.dataTables.min.js',
 		'bower_components/bootstrap-select/dist/js/bootstrap-select.min.js',
 		'bower_components/chart.js/dist/Chart.min.js',
+		'bower_components/fancybox/dist/jquery.fancybox.min.js',
+		
 		])
 		// .pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
 		// .pipe(uglify()) // Сжимаем JS файл
@@ -118,6 +120,7 @@ gulp.task('css-libs', ['sass'], function() {
 		'bower_components/owl.carousel/dist/assets/owl.carousel.css',
 		'bower_components/datatables.net-dt/css/jquery.dataTables.min.css',
 		'bower_components/bootstrap-select/dist/css/bootstrap-select.min.css',
+		'bower_components/fancybox/dist/jquery.fancybox.min.css',
 		])
 		.pipe(sourcemaps.init())
 		.pipe(cssnano())

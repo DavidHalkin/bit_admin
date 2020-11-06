@@ -198,13 +198,13 @@
 										<a class="nav-link " id="nav-tab_2-tab" data-toggle="tab" href="#nav-tab_2" role="tab" aria-controls="nav-tab_2" aria-selected="false">Cards</a>
 									</li>
 									<li class="nav-item" role="presentation">
-										<a class="nav-link " id="nav-tab_3-tab" data-toggle="tab" href="#nav-tab_3" role="tab" aria-controls="nav-tab_3" aria-selected="false">Settings</a>
+										<a class="nav-link active" id="nav-tab_3-tab" data-toggle="tab" href="#nav-tab_3" role="tab" aria-controls="nav-tab_3" aria-selected="false">Settings</a>
 									</li>
 									<li class="nav-item" role="presentation">
 										<a class="nav-link" id="nav-tab_4-tab" data-toggle="tab" href="#nav-tab_4" role="tab" aria-controls="nav-tab_4" aria-selected="false">Login history</a>
 									</li>
 									<li class="nav-item" role="presentation">
-										<a class="nav-link active" id="nav-tab_5-tab" data-toggle="tab" href="#nav-tab_5" role="tab" aria-controls="nav-tab_5" aria-selected="false">Accounts</a>
+										<a class="nav-link " id="nav-tab_5-tab" data-toggle="tab" href="#nav-tab_5" role="tab" aria-controls="nav-tab_5" aria-selected="false">Accounts</a>
 									</li>
 								</ul>
 								<div class="tab-content pt-4 mt-2" id="nav-tabContent">
@@ -454,33 +454,26 @@
 											</div>
 										</div>
 									</div>
-									<div class="tab-pane fade" id="nav-tab_3" role="tabpanel" aria-labelledby="nav-tab_3-tab">
+									<div class="tab-pane fade show active" id="nav-tab_3" role="tabpanel" aria-labelledby="nav-tab_3-tab">
+										<div class="d-flex back_btn_holder back_btn_holder_js">
+											<a href="#" class="d-flex back_btn back_btn_js"><i class="fas fa-arrow-left"></i></a>
+										</div>
+										<h2 class="fz_28 pb-5 mb-0">Incorporation Details</h2>
 										<div class="row">
 											<div class="col-12 col-md-7 col-lg-11 col-xl-8">
 												<div class="form-group mb-4">
-													<label class="label fz_14 color_gray" for="x1">Date of birth:</label>
-													<input type="text" class="form-control form-control-lg rounded_2 fz_16 border_gray" value="" id="x1" placeholder="21/02/2002">
+													<label class="label fz_14 color_gray" for="x2">Country of incorporation:</label>
+													<input type="text" class="form-control form-control-lg rounded_2 fz_16 border_gray" value="" id="x2" placeholder="Latvia">
 												</div>
 												<div class="form-group mb-4">
-													<label class="label fz_14 color_gray" for="x11">Address:</label>
-													<input type="text" class="form-control form-control-lg rounded_2 fz_16 border_gray" value="Bazhenova street, Moscow, 129128" id="x11" placeholder="">
+													<label class="label fz_14 color_gray" for="x2c">Legal name:</label>
+													<input type="text" class="form-control form-control-lg rounded_2 fz_16 border_gray" value="Beldev Consulting OU Latvijas Filiale “Beldev”" id="x2c" placeholder="">
 												</div>
 												<div class="form-group mb-4">
-													<label class="label fz_14 color_gray" for="x111">Phone number:</label>
-													<input type="text" class="form-control form-control-lg rounded_2 fz_16 border_gray" value="+79053473359" id="x111" placeholder="">
+													<label class="label fz_14 color_gray" for="x2cq">Phone number:</label>
+													<input type="text" class="form-control form-control-lg rounded_2 fz_16 border_gray" value="+79053473359" id="x2cq" placeholder="">
 												</div>
-												<div class="form-group mb-4">
-													<label class="label fz_14 color_gray" for="x1111">E-mail:</label>
-													<input type="text" class="form-control form-control-lg rounded_2 fz_16 border_gray" value="joewilliams@gmail.com" id="x1111" placeholder="">
-												</div>
-												<div class="form-group mb-4">
-													<label class="label fz_14 color_gray" for="x11111">IBAN issuer:</label>
-													<input type="text" class="form-control form-control-lg rounded_2 fz_16 border_gray" value="NexPay UAB" id="x11111" placeholder="">
-												</div>
-												<div class="form-group mb-4">
-													<a href="#" class="btn text-primary px-0">Change password</a>
-												</div>
-												<button class="btn btn-success btn-block btn-lg fw_500 fz_16">Save</button>
+												<button class="btn btn-success btn-block btn-lg fw_500 fz_16">Save changes</button>
 											</div>
 										</div>
 									</div>
@@ -500,7 +493,7 @@
 											</li>
 										</ul>
 									</div>
-									<div class="tab-pane fade show active" id="nav-tab_5" role="tabpanel" aria-labelledby="nav-tab_5-tab">
+									<div class="tab-pane fade" id="nav-tab_5" role="tabpanel" aria-labelledby="nav-tab_5-tab">
 										<div class="search_panel search_panel_with_btn mb-4">
 											<input type="text" class="form-control" placeholder="Search by name">
 											<span class="btn_pseudo text_muted"><i class="fas fa-search"></i></span>

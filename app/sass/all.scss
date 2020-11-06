@@ -649,3 +649,132 @@
 		margin-bottom: 48px;
 	}
 }
+.mxw_50{
+	max-width: 50px;
+	flex:0 0 50px;
+}
+.custom_col_lgg{
+	@media screen and (min-width: 992px) and (max-width: 1150px) {
+		max-width: 100%;
+		flex:0 0 100%
+	}
+}
+.color_black{
+	color: #000;
+}
+.one_card{
+	transition: all 0.3s ease;
+	.owner_name{
+		font-size: 20px;
+		line-height: 22px;
+		color: #000;
+		@include text-truncate();
+		@include media-breakpoint-only(lg) {
+			font-size: 16px;
+			line-height: 18px;
+		}
+	}
+	&:hover{
+		background:rgba(theme-color("warning"),.05);
+	}
+	.top_part{
+		padding-bottom: 30px;
+		strong{
+			font-weight: 500;
+			color: #000;
+			font-size: 24px;
+			line-height: 28px;
+			@include media-breakpoint-only(lg) {
+				font-size: 17px;
+			}
+		}
+		span{
+			text-align: right;
+			img{
+				max-width: 100%;
+			}
+		}
+	}
+	.middle_part{
+		padding-bottom: 30px;
+	}
+	.bottom_part{
+		color: #4C5461;
+		@include media-breakpoint-only(lg) {
+			font-size: 11px;
+		}
+	}
+	.face_col,.land_col{
+		max-width: 48px;
+		flex:0 0 48px;
+		border-radius: 50%;
+		overflow: hidden;
+		img{
+			max-width: 100%;
+			display: block;
+			height: auto;
+		}
+	}
+	.land_col{
+		max-width: 36px;
+		flex:0 0 36px;
+	}
+}
+.bottom_part_info {
+	min-width: 0;
+}
+.name_acc{
+	font-size: 18px;
+	line-height: 20px;
+	color: #000;
+	@include text-truncate();
+	@include media-breakpoint-only(lg) {
+		font-size: 16px;
+		line-height: 18px;
+	}
+}
+.hidden_number{
+	margin-right: 7px;
+	em{
+		width: 3px;
+		height: 3px;
+		border-radius: 50%;
+		margin: 0 2px 0 0;
+		background: #4C5461;
+	}
+}
+.list_panel{
+	a{
+		padding:24px 40px 24px 24px;
+		border: 1px solid #E4E8F0;
+		border-radius: 2px;
+		display: block;
+		transition: all 0.3s ease;
+		position: relative;
+		&:after{
+			content: "";
+			position: absolute;
+			top: 50%;
+			right: 24px;
+			transform:translateY(-50%);
+			width: 10px;
+			height: 18px;
+			background-image: url("data:image/svg+xml,%3Csvg width='10' height='18' viewBox='0 0 10 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1.5L8.5 9L1 16.5' stroke='%239DA7BE' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+		}
+		&:hover{
+			box-shadow: 2px 4px 20px rgba(157, 167, 190, 0.16);
+		}
+	}
+	strong{
+		font-weight: normal;
+		font-size: 18px;
+		line-height: 21px;
+		color: #000;
+		padding-bottom: 10px;
+	}
+	span{
+		font-size: 16px;
+		line-height: 19px;
+		color: #4C5461;
+	}
+}

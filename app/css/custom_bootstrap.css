@@ -1,5 +1,5 @@
 /*! Bootstrap v4.5.3 (https://getbootstrap.com/) Copyright 2011-2020 The Bootstrap Authors Copyright 2011-2020 Twitter, Inc. Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE) */
-:root { --blue: #007bff; --indigo: #6610f2; --purple: #6f42c1; --pink: #e83e8c; --red: #dc3545; --orange: #fd7e14; --yellow: #ffc107; --green: #28a745; --teal: #20c997; --cyan: #17a2b8; --white: #fff; --gray: #6c757d; --gray-dark: #343a40; --primary: #0D85F3; --secondary: #6c757d; --success: #0FC1AB; --info: #17a2b8; --warning: #ffc107; --danger: #EB001B; --light: #E4E8F0; --dark: #343a40; --breakpoint-xs: 0; --breakpoint-sm: 576px; --breakpoint-md: 768px; --breakpoint-lg: 992px; --breakpoint-xl: 1500px; --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+:root { --blue: #007bff; --indigo: #6610f2; --purple: #6f42c1; --pink: #e83e8c; --red: #dc3545; --orange: #fd7e14; --yellow: #ffc107; --green: #28a745; --teal: #20c997; --cyan: #17a2b8; --white: #fff; --gray: #6c757d; --gray-dark: #343a40; --primary: #0D85F3; --secondary: #6c757d; --success: #0FC1AB; --info: #17a2b8; --warning: #ffc107; --danger: #EB001B; --light: #E4E8F0; --dark: #343a40; --breakpoint-xs: 0; --breakpoint-sm: 576px; --breakpoint-md: 768px; --breakpoint-lg: 992px; --breakpoint-xl: 1450px; --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
 
 *, *::before, *::after { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
@@ -191,7 +191,7 @@ pre code { font-size: inherit; color: inherit; word-break: normal; }
 
 @media (min-width: 992px) { .container, .container-sm, .container-md, .container-lg { max-width: 960px; } }
 
-@media (min-width: 1500px) { .container, .container-sm, .container-md, .container-lg, .container-xl { max-width: 1140px; } }
+@media (min-width: 1450px) { .container, .container-sm, .container-md, .container-lg, .container-xl { max-width: 1140px; } }
 
 .row { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; margin-right: -15px; margin-left: -15px; }
 
@@ -437,7 +437,7 @@ pre code { font-size: inherit; color: inherit; word-break: normal; }
   .offset-lg-10 { margin-left: 83.33333%; }
   .offset-lg-11 { margin-left: 91.66667%; } }
 
-@media (min-width: 1500px) { .col-xl { -webkit-flex-basis: 0; -ms-flex-preferred-size: 0; flex-basis: 0; -webkit-box-flex: 1; -webkit-flex-grow: 1; -ms-flex-positive: 1; flex-grow: 1; max-width: 100%; }
+@media (min-width: 1450px) { .col-xl { -webkit-flex-basis: 0; -ms-flex-preferred-size: 0; flex-basis: 0; -webkit-box-flex: 1; -webkit-flex-grow: 1; -ms-flex-positive: 1; flex-grow: 1; max-width: 100%; }
   .row-cols-xl-1 > * { -webkit-box-flex: 0; -webkit-flex: 0 0 100%; -ms-flex: 0 0 100%; flex: 0 0 100%; max-width: 100%; }
   .row-cols-xl-2 > * { -webkit-box-flex: 0; -webkit-flex: 0 0 50%; -ms-flex: 0 0 50%; flex: 0 0 50%; max-width: 50%; }
   .row-cols-xl-3 > * { -webkit-box-flex: 0; -webkit-flex: 0 0 33.33333%; -ms-flex: 0 0 33.33333%; flex: 0 0 33.33333%; max-width: 33.33333%; }
@@ -600,7 +600,7 @@ pre code { font-size: inherit; color: inherit; word-break: normal; }
 @media (max-width: 991.98px) { .table-responsive-lg { display: block; width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
   .table-responsive-lg > .table-bordered { border: 0; } }
 
-@media (max-width: 1499.98px) { .table-responsive-xl { display: block; width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+@media (max-width: 1449.98px) { .table-responsive-xl { display: block; width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
   .table-responsive-xl > .table-bordered { border: 0; } }
 
 .table-responsive { display: block; width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
@@ -1012,7 +1012,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
 @media (min-width: 992px) { .dropdown-menu-lg-left { right: auto; left: 0; }
   .dropdown-menu-lg-right { right: 0; left: auto; } }
 
-@media (min-width: 1500px) { .dropdown-menu-xl-left { right: auto; left: 0; }
+@media (min-width: 1450px) { .dropdown-menu-xl-left { right: auto; left: 0; }
   .dropdown-menu-xl-right { right: 0; left: auto; } }
 
 .dropup .dropdown-menu { top: auto; bottom: 100%; margin-top: 0; margin-bottom: 0.125rem; }
@@ -1381,9 +1381,9 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
   .navbar-expand-lg .navbar-collapse { display: -webkit-box !important; display: -webkit-flex !important; display: -ms-flexbox !important; display: flex !important; -webkit-flex-basis: auto; -ms-flex-preferred-size: auto; flex-basis: auto; }
   .navbar-expand-lg .navbar-toggler { display: none; } }
 
-@media (max-width: 1499.98px) { .navbar-expand-xl > .container, .navbar-expand-xl > .container-fluid, .navbar-expand-xl > .container-sm, .navbar-expand-xl > .container-md, .navbar-expand-xl > .container-lg, .navbar-expand-xl > .container-xl { padding-right: 0; padding-left: 0; } }
+@media (max-width: 1449.98px) { .navbar-expand-xl > .container, .navbar-expand-xl > .container-fluid, .navbar-expand-xl > .container-sm, .navbar-expand-xl > .container-md, .navbar-expand-xl > .container-lg, .navbar-expand-xl > .container-xl { padding-right: 0; padding-left: 0; } }
 
-@media (min-width: 1500px) { .navbar-expand-xl { -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-flow: row nowrap; -ms-flex-flow: row nowrap; flex-flow: row nowrap; -webkit-box-pack: start; -webkit-justify-content: flex-start; -ms-flex-pack: start; justify-content: flex-start; }
+@media (min-width: 1450px) { .navbar-expand-xl { -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-flow: row nowrap; -ms-flex-flow: row nowrap; flex-flow: row nowrap; -webkit-box-pack: start; -webkit-justify-content: flex-start; -ms-flex-pack: start; justify-content: flex-start; }
   .navbar-expand-xl .navbar-nav { -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; }
   .navbar-expand-xl .navbar-nav .dropdown-menu { position: absolute; }
   .navbar-expand-xl .navbar-nav .nav-link { padding-right: 0.5rem; padding-left: 0.5rem; }
@@ -1770,7 +1770,7 @@ a.badge-dark:focus, a.badge-dark.focus { outline: 0; -webkit-box-shadow: 0 0 0 0
   .list-group-horizontal-lg > .list-group-item + .list-group-item { border-top-width: 1px; border-left-width: 0; }
   .list-group-horizontal-lg > .list-group-item + .list-group-item.active { margin-left: -1px; border-left-width: 1px; } }
 
-@media (min-width: 1500px) { .list-group-horizontal-xl { -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; }
+@media (min-width: 1450px) { .list-group-horizontal-xl { -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; }
   .list-group-horizontal-xl > .list-group-item:first-child { -webkit-border-bottom-left-radius: 0.25rem; border-bottom-left-radius: 0.25rem; -webkit-border-top-right-radius: 0; border-top-right-radius: 0; }
   .list-group-horizontal-xl > .list-group-item:last-child { -webkit-border-top-right-radius: 0.25rem; border-top-right-radius: 0.25rem; -webkit-border-bottom-left-radius: 0; border-bottom-left-radius: 0; }
   .list-group-horizontal-xl > .list-group-item.active { margin-top: 0; }
@@ -1920,7 +1920,7 @@ a.close.disabled { pointer-events: none; }
 
 @media (min-width: 992px) { .modal-lg, .modal-xl { max-width: 800px; } }
 
-@media (min-width: 1500px) { .modal-xl { max-width: 1140px; } }
+@media (min-width: 1450px) { .modal-xl { max-width: 1140px; } }
 
 .tooltip { position: absolute; z-index: 1070; display: block; margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; font-style: normal; font-weight: 400; line-height: 1.5; text-align: left; text-align: start; text-decoration: none; text-shadow: none; text-transform: none; letter-spacing: normal; word-break: normal; word-spacing: normal; white-space: normal; line-break: auto; font-size: 0.875rem; word-wrap: break-word; opacity: 0; }
 
@@ -2232,7 +2232,7 @@ a.bg-dark:hover, a.bg-dark:focus, button.bg-dark:hover, button.bg-dark:focus { b
   .d-lg-flex { display: -webkit-box !important; display: -webkit-flex !important; display: -ms-flexbox !important; display: flex !important; }
   .d-lg-inline-flex { display: -webkit-inline-box !important; display: -webkit-inline-flex !important; display: -ms-inline-flexbox !important; display: inline-flex !important; } }
 
-@media (min-width: 1500px) { .d-xl-none { display: none !important; }
+@media (min-width: 1450px) { .d-xl-none { display: none !important; }
   .d-xl-inline { display: inline !important; }
   .d-xl-inline-block { display: inline-block !important; }
   .d-xl-block { display: block !important; }
@@ -2439,7 +2439,7 @@ a.bg-dark:hover, a.bg-dark:focus, button.bg-dark:hover, button.bg-dark:focus { b
   .align-self-lg-baseline { -webkit-align-self: baseline !important; -ms-flex-item-align: baseline !important; align-self: baseline !important; }
   .align-self-lg-stretch { -webkit-align-self: stretch !important; -ms-flex-item-align: stretch !important; align-self: stretch !important; } }
 
-@media (min-width: 1500px) { .flex-xl-row { -webkit-box-orient: horizontal !important; -webkit-box-direction: normal !important; -webkit-flex-direction: row !important; -ms-flex-direction: row !important; flex-direction: row !important; }
+@media (min-width: 1450px) { .flex-xl-row { -webkit-box-orient: horizontal !important; -webkit-box-direction: normal !important; -webkit-flex-direction: row !important; -ms-flex-direction: row !important; flex-direction: row !important; }
   .flex-xl-column { -webkit-box-orient: vertical !important; -webkit-box-direction: normal !important; -webkit-flex-direction: column !important; -ms-flex-direction: column !important; flex-direction: column !important; }
   .flex-xl-row-reverse { -webkit-box-orient: horizontal !important; -webkit-box-direction: reverse !important; -webkit-flex-direction: row-reverse !important; -ms-flex-direction: row-reverse !important; flex-direction: row-reverse !important; }
   .flex-xl-column-reverse { -webkit-box-orient: vertical !important; -webkit-box-direction: reverse !important; -webkit-flex-direction: column-reverse !important; -ms-flex-direction: column-reverse !important; flex-direction: column-reverse !important; }
@@ -2492,7 +2492,7 @@ a.bg-dark:hover, a.bg-dark:focus, button.bg-dark:hover, button.bg-dark:focus { b
   .float-lg-right { float: right !important; }
   .float-lg-none { float: none !important; } }
 
-@media (min-width: 1500px) { .float-xl-left { float: left !important; }
+@media (min-width: 1450px) { .float-xl-left { float: left !important; }
   .float-xl-right { float: right !important; }
   .float-xl-none { float: none !important; } }
 
@@ -3019,7 +3019,7 @@ a.bg-dark:hover, a.bg-dark:focus, button.bg-dark:hover, button.bg-dark:focus { b
   .mb-lg-auto, .my-lg-auto { margin-bottom: auto !important; }
   .ml-lg-auto, .mx-lg-auto { margin-left: auto !important; } }
 
-@media (min-width: 1500px) { .m-xl-0 { margin: 0 !important; }
+@media (min-width: 1450px) { .m-xl-0 { margin: 0 !important; }
   .mt-xl-0, .my-xl-0 { margin-top: 0 !important; }
   .mr-xl-0, .mx-xl-0 { margin-right: 0 !important; }
   .mb-xl-0, .my-xl-0 { margin-bottom: 0 !important; }
@@ -3140,7 +3140,7 @@ a.bg-dark:hover, a.bg-dark:focus, button.bg-dark:hover, button.bg-dark:focus { b
   .text-lg-right { text-align: right !important; }
   .text-lg-center { text-align: center !important; } }
 
-@media (min-width: 1500px) { .text-xl-left { text-align: left !important; }
+@media (min-width: 1450px) { .text-xl-left { text-align: left !important; }
   .text-xl-right { text-align: right !important; }
   .text-xl-center { text-align: center !important; } }
 

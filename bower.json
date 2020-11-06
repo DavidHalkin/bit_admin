@@ -15,7 +15,8 @@
     "owl.carousel": "^2.3.4",
     "datatables.net-dt": "^3.2.2",
     "bootstrap-select": "^1.13.18",
-    "chart.js": "^2.9.4"
+    "chart.js": "^2.9.4",
+    "fancybox": "^3.5.7"
   },
   "devDependencies": {}
 }
